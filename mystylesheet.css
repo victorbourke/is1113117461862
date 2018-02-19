@@ -2,201 +2,102 @@
         text-align: center;
         }
 
-@import "lesshat";
+@import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
 
-body{
-  background-color:#123;
+a {
+      text-decoration:none;
+   }
+
+.wrapper {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform: translate(-50%,-50%);
 }
 
-ul {
-  width:600px;
-  list-style-type:none;
-  margin:40px auto;
-  padding:0;
-  
-  li{
-    width:25%;
-    float:left;
-      a{
-        padding: 12px 0px;
-        margin: 0px 12px;
-        display: block;
-        text-decoration: none;
-        position: relative;
-        text-align: center;
-        color:#fff;
-        font-size:18px;
-        text-transform: uppercase;
-        font-family: 'Avant Garde',Avantgarde,'Century Gothic',CenturyGothic,AppleGothic,sans-serif;
-        &:before{
-          content: " ";
-          position: absolute;
-          left: 0%;
-          bottom: 10px;
-          height: 1px;
-          width: 0%;
-          background-color: #fff;
-          transition: width 0.5s ease-in-out;
-        }
-        &:after{
-          content: " ";
-          position: absolute;
-          right: 0%;
-          bottom: 10px;
-          height: 1px;
-          width: 0%;
-          background-color: #fff;
-          transition: width 0.5s ease-in-out;
-        }
-        
-        &:hover,&:focus{
-          &:before{
-            width:50%
-          }
-          &:after{
-            width:50%
-          }
-        }
-      }
-  }
-}
-
-
-
-.layout:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-     }
-.layout { display: inline-block; }
-
-*/
-
-// Animate the size, inside
-.fill:hover,
-.fill:focus {
-  box-shadow: inset 0 0 0 2em var(--hover);
-}
-
-// Animate the size, outside
-.pulse:hover, 
-.pulse:focus {
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em rgba(#fff,0);
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 var(--hover); }
-}
-
-// Stack multiple shadows, one from the left, the other from the right
-.close:hover,
-.close:focus {
-  box-shadow: 
-    inset -3.5em 0 0 0 var(--hover),
-    inset 3.5em 0 0 0 var(--hover);  
-}
-
-// Size can also be negative; see how it's smaller than the element
-.raise:hover,
-.raise:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(-0.25em);
-}
-
-// Animating from the bottom
-.up:hover,
-.up:focus {
-  box-shadow: inset 0 -3.25em 0 0 var(--hover);
-}
-
-// And from the left
-.slide:hover,
-.slide:focus {
-  box-shadow: inset 6.5em 0 0 0 var(--hover);
-}
-
-// Multiple shadows, one on the outside, another on the inside
-.offset {  
-  box-shadow: 
-    0.3em 0.3em 0 0 var(--color),
-    inset 0.3em 0.3em 0 0 var(--color);
-  
-  &:hover,
-  &:focus {
-    box-shadow: 
-      0 0 0 0 var(--hover),
-      inset 6em 3.5em 0 0 var(--hover);
-  }
-}
-
-//=== Set button colors
-// If you wonder why use Sass vars or CSS custom properties...
-  // Make a map with the class names and matching colors
-$colors: (
-  fill: #a972cb,
-  pulse: #ef6eae, 
-  close: #ff7f82, 
-  raise: #ffa260, 
-  up: #e4cb58, 
-  slide: #8fc866, 
-  offset: #19bc8b
-);
-
-// Sass variables compile to a static string; CSS variables are dynamic and inherited
-  // Loop through the map and set CSS custom properties using Sass variables
-@each $button, $color in $colors {
-  .#{$button} {
-    --color: #{$color};
-    --hover: #{adjust-hue($color, 45deg)};
-  }
-}
-
-// Now every button will have different colors as set above. We get to use the same structure, only changing the custom properties.
-button {  
-  color: var(--color);
-  transition: 0.25s;
-  
-  &:hover,
-  &:focus { 
-    border-color: var(--hover);
-    color: #fff;
-  }
-}
-
-//=== Pen styling, ignore
-body {
+h1 a {
   color: #fff;
-  background: hsl(227, 10%, 10%);
-  font: 300 1em 'Fira Sans', sans-serif;
+  font-size: 2em;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-family: 'Dosis', sans-serif;
+}
+
+/*effect-underline*/
+a.effect-underline:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+/*effect-box*/
+a.effect-box:after,
+a.effect-box:before {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	
+}
+
+a.effect-box:before {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  -webkit-transform: scale(1,0);
+	transform: scale(1,0);
+}
+
+a.effect-box:after {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.effect-box:hover:after,
+a.effect-box:hover:before {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+/* effect-shine */
+.effect-shine:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
   
-  // Center everything ever
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
+  to {
+    -webkit-mask-position: -50%;
+  }
 }
-
-// Basic button styles
-button {
-  background: none;
-  border: 2px solid;
-  font: inherit;
-  line-height: 1;
-  margin: 0.5em;
-  padding: 1em 2em;
-}
-
-h1 { font-weight: 400; }
-
-code { 
-  color: #e4cb58;
-  font: inherit;
-}
-
-a { color: inherit; }
