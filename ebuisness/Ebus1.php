@@ -17,7 +17,7 @@
         
       body {
       	margin: 0;
-      	background: #2F2FA2;
+      	background: #ffffff;
       	font-family: 'Work Sans', sans-serif;
       	font-weight: 400;
       }
@@ -28,7 +28,7 @@
       }
       
       header {
-        background: #2F2FA2;
+        background: #ffffff;
       }
       
       header::after {
@@ -61,21 +61,21 @@
       }
       
       nav a {
-        color: #ffffff;
+        color: #2F2FA2;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 17px;
       }
       
       nav a:hover {
-        color: #F64C72;
+        color: #2F2FA2;
       }
       
       nav a::before {
         content: '';
         display: block;
         height: 5px;
-        background-color: #F64C72;
+        background-color: #2F2FA2;
       
         position: absolute;
         top: 0;
