@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <title>Home</title>
         <link rel="icon" type="image/png" href="/if_Red_pin_132666.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
    </head>
    <body>
        
@@ -16,6 +17,60 @@
       	background: #ffffff;
       	font-family: 'Work Sans', sans-serif;
       	font-weight: 400;
+      }
+      
+      .mainheading {
+        margin: 0;
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+      
+      .textpersonal {
+        margin: 0;
+        position: absolute;
+        top: 35%;
+        left: 31.5%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+      
+      .me {
+        margin: 0;
+        max-width:100%;
+        max-height:100%;
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+      
+      .buttoneducation{
+        margin: 0;
+        position: absolute;
+        top: 80%;
+        left: 80%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+      
+      .justify {
+        text-align:justify;
+        text-justify:inter-word;
+      }
+      
+      .paragraphs {
+        width: 33%;
+        margin-left: 48%;
+        position: absolute;
+        top: 28%;
+      }
+
+      button {
+        text-align: center;
       }
       
     .container {
@@ -84,6 +139,9 @@
         width: 100%;
       }
       
+      
+      
+
 </style>
     
   <header>
@@ -108,14 +166,29 @@
     
   </header>
   
+  <center><h1 class="mainheading">─ Personal ─</h1></center>
   
-        <h1 class="mainheading">Personal Details</h1>
+  <img src="/me.png" alt="logo" class"me">
+  
+  <div class="textpersonal">
         
-        <p><strong>Name:</strong>Victor Bourke</p>
-        <p><strong>Address:</strong>****</p>
-        <p><strong>Phone:</strong>**********</p>
-        <p><strong>Email:</strong>117461862@umail.ucc.ie</p>
+        <center><p><strong>Name:</strong>Victor Bourke<br/>
+        <strong>Address:</strong>*****<br/>
+        <strong>Phone:</strong>*****<br/>
+        <strong>Email:</strong>117461862@umail.ucc.ie</p>
         
-        <a href="cv_page2.html" class="btn btn-dark">Next</a>
+        
+        </div>
+        
+        <div class="justify">
+          <p class="paragraphs">hello</p>
+            
+          </div>
+          
+          
+        </div>
+        
+        
+        <a class="buttoneducation" href="cv_page2.html">Education</a></center>
     </body>
 </html>

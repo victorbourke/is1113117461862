@@ -10,7 +10,23 @@
     background-color: rgb(51, 153, 204);
 }
 
+#section4{
+    background-color: rgb(44, 62, 80);
+}
+
+#section5{
+    background-color: rgb(44, 62, 80);
+}
+
+
+
 .section{
     text-align: center;
     color: white;
+    margin: 0;
+    background: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    
 }
+

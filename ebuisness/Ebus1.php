@@ -22,6 +22,17 @@
       	font-weight: 400;
       }
       
+            
+      .textcenter {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+      
+      
     .container {
       	width: 80%;
       	margin: 0 auto;
@@ -119,7 +130,7 @@
   
         
         
-        
+        <div class="textcenter">
         
             <h4>Select a Product</h4>
             
@@ -132,7 +143,14 @@
                 SalesForce @ $100
               </label>
               
-              <br/>
+            <br>
+            
+            <label for="cloud9" class="label2">
+              <input type="radio" id="cloud9" name="product" onClick="disablebtnProceed()"/>
+               Cloud9 @ $200
+            </label>
+                
+            <br>
               
               <label for="aws">
                 <input type="radio" id="aws" name="product" onClick="disablebtnProceed()"/>
@@ -140,19 +158,43 @@
               </label>
               
               <br/>
-              <br/>
               
-              <label for="subtotal">
-                Sub Total
-                <input type="text" id="subtotal" value="0.00" readonly/>
+              <label for="gmail" class="label4">
+              <input type="radio" id="gmail" name="product" onClick="disablebtnProceed()"/>
+              Gmail @ $400
               </label>
               
               <br/>
               
-              <label for="total">
-                Total
-                <input type="hidden" id="total" name="total" value="0.00" readonly/>
-              </label>
+            <!-- Breakdown of the price for the selected option -->
+            <label for="subtotal" class="label5">
+              Sub Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text" id="subtotal" name="subtotal" value="0.00" readonly/>
+            </label>
+            
+            <br>
+            
+            <label for="discount" class="label6">
+              Discount @ 5% &nbsp;&nbsp;&nbsp; <input type="text" id="discount" name="discount" value="0.00" readonly/>
+              <br>
+              (- Discount)
+            </label>
+                
+            <br>
+            
+            <label for="vat" class="label7">
+              VAT @ 10% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text" id="vat" name="vat" value="0.00" readonly/>
+            </label>
+                
+            <br>
+                
+            <label for="total" class="label8">
+              Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text" id="total" name="total" value="0.00" readonly/>
+              <br>
+              (- Discount + VAT)
+            </label>
     
               <br/>
               
@@ -163,6 +205,6 @@
             <br/>
             <button onClick="calcSub()">Calculate Cost</button>
             <a role="button" href="Ebus1.php">Clear Choice</a>
-    
+    </div>
     </body>
 </html>

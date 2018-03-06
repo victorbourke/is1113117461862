@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <title>Home</title>
         <link rel="icon" type="image/png" href="/if_Red_pin_132666.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     </head>
     
     
@@ -21,10 +22,57 @@
       	font-weight: 400;
       }
       
+        .mainheading {
+        margin: 0;
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+      
+        .textleft {
+        margin: 0;
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+      
+        .textright {
+        margin: 0;
+        position: absolute;
+        top: 70%;
+        left: 80%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+      
+        .button {
+        margin: 0;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+      
+        .pictureleft {
+        height: 80%;
+        background: cover;
+        width: 100%;
+      }
+      
+      
+      
+      
+      
     .container {
       	width: 80%;
       	margin: 0 auto;
       }
+      
       
       header {
         background: #ffffff;
@@ -89,8 +137,15 @@
            
       
 </style>
+   
+   
+   
+   
     
   <header>
+    
+    
+    
     
     <div class="container">
       
@@ -111,18 +166,28 @@
     </div>
     
   </header>    
-        <h1 class="mainheading">Education Details</h1>
+  
+  
+  
+  <center><h1 class="mainheading">─ Education Details ─</h1></center>
+  
+  <div class="textleft">
         
-        <p><strong>Secondary School:</strong>Cashel Community School</p>
-        <p><strong>Leaving Cert Result:</strong>***</p>
-        <p><strong>Year:</strong>2016/2017</p>
         
-        <br/>
+        <p><strong>Secondary School:</strong>Cashel Community School<br/><strong>Leaving Cert Result:</strong>***<br/><strong>Year:</strong>2016/2017<br/></p>
         
-        <p><strong>College:</strong>UCC</p>
-        <p><strong>Course:</strong>BIS</p>
-        <p><strong>Year:</strong>2017-2020</p>
+   </div> 
+   
+   <div class="textright">
+        <p><strong>College:</strong>UCC<br/><strong>Course:</strong>BIS<br/><strong>Year:</strong>2017-2020<br/></p>
         
-        <a href="cv_page3.html" class="btn btn-dark">Next</a>
+        
+     </div>  
+     
+     <img src="/UCC.png" alt="UCC" class="pictureleft">
+     
+        <div class="button"><a href="cv_page3.html">Next</a></div>
+        
+        
     </body>
 </html>
