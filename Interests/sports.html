@@ -15,11 +15,28 @@
       	font-weight: 400;
       }
       
-      .textcenter {
+      .mayweather {
+        height: 100%; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      
+      .mainheading {
         margin: 0;
         position: absolute;
-        top: 50%;
+        top: 18%;
         left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+      
+      .info {
+        margin: 0;
+        position: absolute;
+        top: 35%;
+        left: 60%;
         margin-right: -50%;
         transform: translate(-50%, -50%)
       }
@@ -27,6 +44,33 @@
     .container {
       	width: 80%;
       	margin: 0 auto;
+      }
+      
+    .fix{
+    position:fixed;
+    bottom:0px;
+    left:-10%;
+    }
+    
+    .button {
+        margin: 0;
+        position: absolute;
+        top: 90%;
+        left: 80%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+      
+      .justify {
+        text-align:justify;
+        text-justify:inter-word;
+      }
+      
+      .paragraphs {
+        width: 33%;
+        margin-left: 53.75%;
+        position: absolute;
+        top: 35.5%;
       }
       
       header {
@@ -115,14 +159,20 @@
     </div>
     
   </header>
-  
-  <div class="textcenter">
-        <h1 class="mainheading">Sports</h1>
-        
+  <div class="fix">
+  <img src="/mayweather.png" alt="mayweather" class="mayweather">
+  </div>
+  <center><h1 class="mainheading">─ Sport ─</h1></center>
+    <div class="info">
         <p><strong>Favourite Sport:</strong> Boxing<strong><br/>Training:</strong>With UCC.</p>
-        
-        
-        <a href="travel.html" class="btn btn-dark">Next</a>
-  </div>      
+  </div>
+    <div class="justify">
+      <p class="paragraphs">
+         I have always had a keen interest in boxing but never really thought I would
+         be able to train in it. Recently I have taken up training with UCC and I am enjoying it 
+         thoroughly.  
+      </p>
+    </div>
+  <a href="travel.html" class="button">Travel</a>
     </body>
 </html>
