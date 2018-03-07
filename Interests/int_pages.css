@@ -1,27 +1,46 @@
-#section1{
-   background-color: rgb(238, 0, 90);
+#travel1{
+   background-image: url("/irish countryside.jpg");
+   background-size: cover;
 }
 
-#section2{
-    background-color: rgb(44, 62, 80);
+#travel2{
+    background-image: url("/italy-valley-countryside.jpg");
+    background-size: cover;
 }
 
-#section3{
-    background-color: rgb(51, 153, 204);
+#travel3{
+    background-image: url("/new-york-city.jpg");
+    background-size: cover;
 }
 
-#section4{
-    background-color: rgb(44, 62, 80);
+#cloud1{
+    background-image: url("/google.jpg");
+    background-size: cover;
 }
 
-#section5{
-    background-color: rgb(44, 62, 80);
+#cloud2{
+        background-image: url("/server.jpeg");
+    background-size: cover;
+}
+
+#cloud3{
+    background-image: url("/room.jpg");
+    background-size: cover;
+}
+
+#cloud4{
+    background-image: url("/apple-park.jpg");
+    background-size: cover;
+}
+
+#cloud5{
+    background-image: url("/room.jpg");
+    background-size: cover;
 }
 
 
 
 .section{
-    text-align: center;
     color: white;
     margin: 0;
     background: #ffffff;
@@ -30,3 +49,17 @@
     
 }
 
+      .justify {
+        text-align:justify;
+        text-justify:inter-word;
+        width: 50%;
+      }
+      
+    .text {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 69%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
