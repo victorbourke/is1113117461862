@@ -22,6 +22,15 @@ session_start();
       	font-weight: 400;
       }
       
+      .textcenter {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+      
     .container {
       	width: 80%;
       	margin: 0 auto;
@@ -90,14 +99,58 @@ session_start();
       
         </style>
         
+                <header>
+    
+    <div class="container">
+      
+      <img src="/Pictures/logoyup.png" alt="logo" class"logo">
+      
+      <h1 class="logo"></h1>
+      
+      <nav>
+        
+        <ul>
+          <li><a href="/homepage.html">Home</a></li>
+          <li><a href="https://www.salesforce.com/company/about-us/" target="_blank">Salesforce</a></li>
+          <li><a href="https://aws.amazon.com/cloud9/" target="_blank">Cloud9</a></li>
+          <li><a href="https://aws.amazon.com/" target="_blank">AWS</a></li>
+          <li><a href="https://www.google.com/gmail/about/" target="_blank">Gmail</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+    
+  </header>
+  
+        
+      <div class="textcenter">  
+        
         <h4>Please enter your payment details</h4>
         
         
             <form action="Ebus3.php" method="POST">
+              
+                    <label for="user_name">Name</label>
+                    
+                    <input type="Name" id="user_name" placeholder="John Doe">
+                    
+                    <br/>
+                    <br/>
+
+                    <label for="user_pin">Email</label>
+                    
+                    <input type="email" id="user_email" placeholder="johndoe@mail.com">
+                    
+                    <br/>
+                    <br/>
+
 
                     <label for="user_pin">PIN</label>
                     
                     <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
+                    
+                    <br/>
+                    <br/>
 
                 <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
               
@@ -108,8 +161,10 @@ session_start();
             
             <?php
             // Set session variables
+            $_SESSION["user_name"] = $_POST["user_name"];
+            $_SESSION["user_email"] = $_POST["user_email"];
             $_SESSION["total"] = $_POST["total"];
             ?>
-        
+        </div>
     </body>
 </html>

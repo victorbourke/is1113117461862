@@ -110,7 +110,7 @@
     
     <div class="container">
       
-      <img src="/logoyup.png" alt="logo" class"logo">
+      <img src="/Pictures/logoyup.png" alt="logo" class"logo">
       
       <h1 class="logo"></h1>
       
@@ -118,9 +118,10 @@
         
         <ul>
           <li><a href="/homepage.html">Home</a></li>
-          <li><a href="/cv_page1.html">CV</a></li>
-          <li><a href="/Interests/sports.html">Interest</a></li>
-          <li><a href="/ebuisness/Ebus1.php">EBuisness</a></li>
+          <li><a href="https://www.salesforce.com/company/about-us/" target="_blank">Salesforce</a></li>
+          <li><a href="https://aws.amazon.com/cloud9/" target="_blank">Cloud9</a></li>
+          <li><a href="https://aws.amazon.com/" target="_blank">AWS</a></li>
+          <li><a href="https://www.google.com/gmail/about/" target="_blank">Gmail</a></li>
         </ul>
       </nav>
       
