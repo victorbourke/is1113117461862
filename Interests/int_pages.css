@@ -1,40 +1,40 @@
 #travel1{
-   background-image: url("/irish countryside.jpg");
+   background-image: url("/Pictures/irish countryside.jpg");
    background-size: cover;
 }
 
 #travel2{
-    background-image: url("/italy-valley-countryside.jpg");
+    background-image: url("/Pictures/italy-valley-countryside.jpg");
     background-size: cover;
 }
 
 #travel3{
-    background-image: url("/new-york-city.jpg");
+    background-image: url("/Pictures/new-york-city.jpg");
     background-size: cover;
 }
 
 #cloud1{
-    background-image: url("/google.jpg");
+    background-image: url("/Pictures/google.jpg");
     background-size: cover;
 }
 
 #cloud2{
-        background-image: url("/server.jpeg");
+        background-image: url("/Pictures/server2.jpg");
     background-size: cover;
 }
 
 #cloud3{
-    background-image: url("/room.jpg");
+    background-image: url("/Pictures/wall-street-new-york-stock-exchange.jpg");
     background-size: cover;
 }
 
 #cloud4{
-    background-image: url("/apple-park.jpg");
+    background-image: url("/Pictures/apple-park.jpg");
     background-size: cover;
 }
 
 #cloud5{
-    background-image: url("/room.jpg");
+    background-image: url("/Pictures/room.jpg");
     background-size: cover;
 }
 
