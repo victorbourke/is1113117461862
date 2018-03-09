@@ -145,7 +145,7 @@ session_start();
 
 
 		<form action="Ebus3.php" method="post">
-
+			<label for="user_card">Card No.</label> <input id="user_card" maxlength="16" placeholder="Card Number" type="password"><br>
 			<label for="user_pin">PIN</label> <input id="user_pin" maxlength="4" placeholder="Card PIN" type="password"><br>
 			<br>
 			<button disabled id="btnPurchase" type="submit">Proceed with Purchase</button>

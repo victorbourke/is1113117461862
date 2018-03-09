@@ -152,15 +152,14 @@
 
 		<form action="Ebus2.php" method="post">
 			<label for="salesforce"><input checked id="salesforce" name="product" onclick="disablebtnProceed()" type="radio"> SalesForce @ $100</label><br>
-			<label class="label2" for="cloud9"><input id="cloud9" name="product" onclick="disablebtnProceed()" type="radio"> Cloud9 @ $200</label><br>
+			<label for="cloud9"><input id="cloud9" name="product" onclick="disablebtnProceed()" type="radio"> Cloud9 @ $200</label><br>
 			<label for="aws"><input id="aws" name="product" onclick="disablebtnProceed()" type="radio"> AWS @ $300</label><br>
-			<label class="label4" for="gmail"><input id="gmail" name="product" onclick="disablebtnProceed()" type="radio"> Gmail @ $400</label><br>
-			<!-- Breakdown of the price for the selected option -->
-			 <label class="label5" for="subtotal">Sub Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="subtotal" name="subtotal" type="text" value="0.00"></label><br>
-			<label class="label6" for="discount">Discount @ 5% &nbsp;&nbsp;&nbsp; <input id="discount" name="discount" type="text" value="0.00"><br>
+			<label for="gmail"><input id="gmail" name="product" onclick="disablebtnProceed()" type="radio"> Gmail @ $400</label><br>
+			 <label class="label5" for="subtotal">Sub Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="subtotal" name="subtotal" type="text" value="0.00"></label><br>
+			<label class="label6" for="discount">Discount @ 5% &nbsp; <input id="discount" name="discount" type="text" value="0.00"><br>
 			(- Discount)</label><br>
-			<label class="label7" for="vat">VAT @ 10% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="vat" name="vat" type="text" value="0.00"></label><br>
-			<label class="label8" for="total">Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="total" name="total" type="text" value="0.00"><br>
+			<label class="label7" for="vat">VAT @ 10% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="vat" name="vat" type="text" value="0.00"></label><br>
+			<label class="label8" for="total">Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="total" name="total" type="text" value="0.00"><br>
 			(- Discount + VAT)</label><br>
 			<button disabled id="btnProceed" type="submit">Add to Shopping Cart</button>
 		</form>

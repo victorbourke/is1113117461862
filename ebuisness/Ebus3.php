@@ -41,7 +41,8 @@ session_start();
 	<center><img alt="Banner" src="/Receipt.jpg" class="receipt"></center>
 
 	<div class="textcenter">
-		<h4>RECEIPT</h4>
+		<center><h4>RECEIPT</h4></center>
+		<center>
 		<?php
 		        // Echo session variables that were set on previous page
 		         
@@ -52,6 +53,7 @@ session_start();
 		        
 		        echo "Total is " . $_SESSION["total"] . ".";
 		        ?>
+		 </center>       
 	</div>
 </body>
 </html>
